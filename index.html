@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ailén Páez — CV Online</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.17.0/devicon.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="icon" type="image/png" href="assets/retropc.png">
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand"><span class="dot"></span>ailenpaez.dev<small>~/cv</small></div>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">☰</button>
+    <nav class="links" id="navLinks">
+      <a href="#perfil">Perfil</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#educacion">Educación</a>
+      <a href="#skills">Skills</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#idiomas">Idiomas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- HERO -->
+  <section class="hero" id="perfil">
+    <div>
+      <div class="eyebrow">Curriculum Vitae</div>
+
+      <div class="profile-row">
+        <div class="avatar-wrap">
+          <img src="assets/profilepic.png" alt="Foto de Ailén Páez" class="avatar-img"
+               onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="avatar-fallback">AP</div>
+        </div>
+        <div>
+          <h1>Ailén Páez</h1>
+          <p class="role-line">Analista de Soporte IT · CX · QA</p>
+        </div>
+      </div>
+
+      <div class="contact-chips">
+        <span><i class="bi bi-geo-alt"></i>Mar del Plata, Buenos Aires, Argentina</span>
+        <span><i class="bi bi-envelope"></i>ailenpaez.empleo@gmail.com</span>
+        <!-- <span><i class="bi bi-telephone"></i>+54 9 294 x</span> -->
+      </div>
+
+      <p class="lead">
+       Analista de Soporte IT con experiencia en atención a usuarios, resolución y seguimiento de incidentes y documentación de bugs. Combino una fuerte orientación a Customer Experience (CX) con conocimientos de QA y desarrollo de software, lo que me permite entender tanto las necesidades del usuario como el lado técnico del producto.
+      </p>
+
+      <div class="cta-row">
+        <a class="btn btn-primary" href="assets/paezailen-cv.pdf" download>
+          <i class="bi bi-download"></i>Descargar CV
+        </a>
+        <a class="btn btn-ghost" href="mailto:ailenpaez.empleo@gmail.com">Contactarme</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/paezailenj/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="https://github.com/ailenpaez/" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="tb-1"></span><span class="tb-2"></span><span class="tb-3"></span>
+        <span class="tb-title">ailen@cv</span>
+      </div>
+      <div class="terminal-body" id="typedTerminal"></div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- EXPERIENCIA -->
+  <section id="experiencia">
+    <div class="section-head">
+      <div class="eyebrow">Experiencia</div>
+      <h2>Experiencia profesional</h2>
+      <p>Del soporte técnico y ventas al testing manual, siempre resolviendo problemas de gente real.</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="tl-icon"><i class="bi bi-life-preserver"></i></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>Asistente de Soporte</h3>
+            <span class="tl-date">Julio 2024 — Actualidad</span>
+          </div>
+          <div class="tl-company">Código Facilito</div>
+          <ul>
+            <li>Soporte a estudiantes en plataforma educativa.</li>
+            <li>Reporte de bugs, documentación y ejecución de pruebas manuales.</li>
+            <li>Elaboración de casos de prueba y seguimiento del ciclo de vida del bug.</li>
+            <li>Trabajo en equipo con QA y desarrollo bajo metodologías ágiles.</li>
+          </ul>
+          <div class="tl-tags">
+            <span>GitHub</span><span>Notion</span><span>Postman</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-icon"><i class="bi bi-mortarboard"></i></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>Mentora</h3>
+            <span class="tl-date">2017 — 2018</span>
+          </div>
+          <div class="tl-company">Instituto San Ignacio Patagonia</div>
+          <ul>
+            <li>Acompañamiento académico y resolución de consultas.</li>
+            <li>Seguimiento de progreso y preparación de material educativo.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-icon"><i class="bi bi-shop"></i></div>
+        <div class="tl-content">
+          <div class="tl-head">
+            <h3>Sales / Customer Service</h3>
+            <span class="tl-date">2011 — 2024</span>
+          </div>
+          <div class="tl-company">Varias empresas</div>
+          <ul>
+            <li>Atención al cliente, soporte posventa y gestión comercial.</li>
+            <li>Manejo de CRM y herramientas operativas.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- EDUCACIÓN -->
+  <section id="educacion">
+    <div class="section-head">
+      <div class="eyebrow">Formación</div>
+      <h2>Educación</h2>
+    </div>
+
+    <ul class="edu-list">
+      <li>
+        <i class="bi bi-mortarboard-fill"></i>
+        <div>
+          <div class="edu-title">Tecnicatura en Desarrollo de Software</div>
+          <div class="edu-sub">IFTS N.º 29 · 2024 — en curso</div>
+        </div>
+      </li>
+      <li>
+        <i class="devicon-salesforce-plain colored"></i>
+        <div>
+          <div class="edu-title">Salesforce Developer</div>
+          <div class="edu-sub">Talento Tech · 2026 — en curso</div>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-mortarboard-fill"></i>
+        <div>
+          <div class="edu-title">Backend Developer</div>
+          <div class="edu-sub">Ada ITW · 2023 — 2024</div>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-mortarboard-fill"></i>
+        <div>
+          <div class="edu-title">Desarrollo COBOL</div>
+          <div class="edu-sub">FCE UBA / Codeki · 2025</div>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-mortarboard-fill"></i>
+        <div>
+          <div class="edu-title">QA Manual</div>
+          <div class="edu-sub">Coderhouse / Argentina Programa · 2023</div>
+        </div>
+      </li>
+      <li>
+        <i class="bi bi-mortarboard-fill"></i>
+        <div>
+          <div class="edu-title">Técnica en Laboratorio Dental</div>
+          <div class="edu-sub">Instituto Pinos de Anchorena · 2012 — 2014</div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <hr class="div">
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-head">
+      <div class="eyebrow">Skills</div>
+      <h2>Habilidades técnicas</h2>
+      <p>Backend, QA y las herramientas con las que trabajo todos los días.</p>
+    </div>
+
+    <div class="skill-groups">
+      <div class="skill-card">
+        <h3>Lenguajes</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-python-plain colored"></i>Python</li>
+          <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+          <li><i class="devicon-typescript-plain colored"></i>TypeScript</li>
+          <li><i class="devicon-csharp-plain colored"></i>C#</li>
+          <li><i class="bi bi-filetype-sql"></i>SQL</li>
+          <li><i class="devicon-cobol-original colored"></i>COBOL</li>
+          <li><i class="bi bi-terminal"></i>JCL</li>
+          <li><i class="bi bi-hdd-rack"></i>Mainframe</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Frameworks</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-nodejs-plain colored"></i>Node.js</li>
+          <li><i class="devicon-express-original colored"></i>Express</li>
+          <li><i class="devicon-django-plain colored"></i>Django</li>
+          <li><i class="devicon-dotnetcore-plain colored"></i>ASP.NET</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Herramientas</h3>
+        <ul class="skill-list">
+          <li><i class="devicon-git-plain colored"></i>Git</li>
+          <li><i class="devicon-github-original colored"></i>GitHub</li>
+          <li><i class="devicon-postman-plain colored"></i>Postman</li>
+          <li><i class="bi bi-bar-chart-line"></i>Power BI</li>
+          <li><i class="devicon-notion-plain colored"></i>Notion</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>QA</h3>
+        <ul class="skill-list">
+          <li><i class="bi bi-clipboard-check"></i>Testing manual</li>
+          <li><i class="bi bi-list-check"></i>Casos de prueba</li>
+          <li><i class="bi bi-bug"></i>Reporte de bugs</li>
+          <li><i class="bi bi-check2-square"></i>Pruebas funcionales</li>
+          <li><i class="bi bi-arrow-repeat"></i>Pruebas de regresión</li>
+          <li><i class="bi bi-diagram-2"></i>Ciclo de vida del bug</li>
+          <li><i class="devicon-selenium-original colored"></i>Selenium</li>
+        </ul>
+      </div>
+      <div class="skill-card" style="grid-column:1/-1;">
+        <h3>Backend</h3>
+        <ul class="skill-list skill-list-wide">
+          <li><i class="bi bi-hdd-network"></i>API REST</li>
+          <li><i class="bi bi-database"></i>Bases de datos relacionales</li>
+          <li><i class="devicon-git-plain colored"></i>Control de versiones</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <hr class="div">
+
+  <!-- IDIOMAS -->
+  <section id="idiomas">
+    <div class="section-head">
+      <div class="eyebrow">Idiomas</div>
+      <h2>Idiomas</h2>
+    </div>
+
+    <div class="lang-grid">
+      <div class="lang-card">
+        <div class="lang-head">
+          <span class="lang-name">Inglés</span>
+          <span class="lang-level">Avanzado · C1</span>
+        </div>
+
+        <div class="lang-bar">
+          <div class="lang-fill" style="width:85%"></div>
+        </div>
+
+        <p class="lang-cert">Certificación EF SET</p>
+      </div>
+      <div class="lang-card">
+        <div class="lang-head">
+          <span class="lang-name">Español</span>
+          <span class="lang-level">Nativo</span>
+        </div>
+        <div class="lang-bar"><div class="lang-fill" style="width:100%;"></div></div>
+        <div class="lang-cert">Lengua materna</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="section-head">
+      <div class="eyebrow">Portfolio · EN CONSTRUCCIÓN</div>
+      <h2>Proyectos</h2>
+      <p>Una selección de trabajos relacionados con QA y testing manual.</p>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-topline">
+          <span class="project-icon"><i class="bi bi-clipboard2-check"></i></span>
+          <span class="project-status">QA manual</span>
+        </div>
+        <h3>Pruebas funcionales</h3>
+        <p>Casos de prueba, reportes de bugs y seguimiento de escenarios.</p>
+        <div class="project-tags">
+          <span>Postman</span>
+          <span>GitHub</span>
+          <span>Testing</span>
+        </div>
+        <a class="project-link" href="https://github.com/ailenpaez/" target="_blank" rel="noopener">
+          Ver en GitHub <i class="bi bi-arrow-up-right"></i>
+        </a>
+      </article>
+
+      <!--
+      <article class="project-card">
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Dolor sit amet</h3>
+        <p>Dolor sit amet, consectetur adipiscing elit.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Consectetur adipiscing</h3>
+        <p>Consectetur adipiscing elit. Aenean commodo ligula.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Integer vitae</h3>
+        <p>Integer vitae libero ac risus egestas placerat.</p>
+      </article>
+
+      <article class="project-card">
+        <h3>Donec sodales</h3>
+        <p>Donec sodales sagittis magna.</p>
+      </article>
+      -->
+    </div>
+  </section>
+
+  <hr class="div">
+
+</main>
+
+<footer id="contacto">
+  <div class="wrap footer-row">
+    <div class="footer-brand">© 2026 Ailén Jorgelina Páez — CV online.</div>
+
+    <div class="footer-links">
+      <a href="mailto:ailenpaez.empleo@gmail.com">
+        <i class="bi bi-envelope"></i>ailenpaez.empleo@gmail.com
+      </a>
+      <!-- <a href="tel:+54294x">
+        <i class="bi bi-telephone"></i>+54 9 294 423-6727
+      </a> -->
+      <a href="https://github.com/ailenpaez/" target="_blank" rel="noopener">
+        <i class="bi bi-github"></i>github.com/ailenpaez
+      </a>
+      <a href="https://www.linkedin.com/in/paezailenj/" target="_blank" rel="noopener">
+        <i class="bi bi-linkedin"></i>linkedin.com/in/paezailenj
+      </a>
+    </div>
+
+    <img
+      class="footer-icon"
+      src="assets/retropc.png"
+      alt="Computadora retro">
+  </div>
+</footer>
+
+<script>
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  // Typed terminal effect
+  const lines = [
+    { html: '<span class="prompt">$</span> <span class="cmd">whoami</span>' },
+    { html: 'Ailen Paez - it support · cx · qa' },
+    { html: '' },
+    { html: '<span class="prompt">$</span> <span class="cmd">cat</span> perfil.yaml' },
+{ html: '<span class="key">role:</span> <span class="str">"IT Support Analyst"</span>' },
+  { html: '<span class="key">focus:</span> [CX, QA, troubleshooting]' },
+  { html: '<span class="key">learning:</span> <span class="str">"Software Development"</span>' },
+  { html: '<span class="key">status:</span> <span class="str">"open to opportunities"</span>' },
+  ];
+
+  const container = document.getElementById('typedTerminal');
+  let li = 0, ci = 0;
+
+  function typeNext() {
+    if (li >= lines.length) {
+      const cur = document.createElement('div');
+      cur.innerHTML = '<span class="prompt">$</span> <span class="cursor"></span>';
+      container.appendChild(cur);
+      return;
+    }
+    const full = lines[li].html;
+    if (ci === 0) {
+      const row = document.createElement('div');
+      row.className = 'term-line';
+      row.id = 'line-' + li;
+      container.appendChild(row);
+    }
+    const row = document.getElementById('line-' + li);
+    if (full.indexOf('<') !== -1) {
+      row.innerHTML = full;
+      li++; ci = 0;
+      setTimeout(typeNext, 260);
+    } else {
+      row.textContent = full.slice(0, ci + 1);
+      ci++;
+      if (ci >= full.length) { li++; ci = 0; setTimeout(typeNext, 200); }
+      else setTimeout(typeNext, 22);
+    }
+  }
+  typeNext();
+</script>
+
+</body>
+</html>
