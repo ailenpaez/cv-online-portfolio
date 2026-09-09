@@ -193,8 +193,12 @@ h1 .accent{
   min-width:0; width:auto; flex:1 1 auto;
 }
 .terminal-body{
-  padding:22px 20px 26px; font-family:var(--mono); font-size:13.5px; line-height:1.9;
-  color:var(--text-mid); min-height:230px;
+  padding:22px 20px 26px;
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  line-height: 1.9;
+  color: var(--text-mid);
+  min-height: 230px;
 }
 .terminal-body .prompt{color:var(--mauve-400);}
 .terminal-body .cmd{color:var(--pink-100);}
